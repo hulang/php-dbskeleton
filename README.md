@@ -1,7 +1,11 @@
-#### 数据库骨架，目前仅支持MYSQL数据库
+## PHP 数据库骨架，目前仅支持MYSQL数据库
+
+### 环境
+
+1. php >= 7.2.5
 
 #### 修改自
-`https://github.com/lotofbadcode/phpextend`兼容PHP8+
+`https://github.com/lotofbadcode/phpextend`
 
 相关文档：https://www.kancloud.cn/lotofbadcode/php_spirit/1417702
 
