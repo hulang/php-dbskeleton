@@ -1,0 +1,24 @@
+{
+    "name": "hulang/php-dbskeleton",
+    "description": "数据库骨架，目前仅支持MYSQL数据库",
+    "license": "Apache-2.0",
+    "type": "library",
+    "keywords": [
+        "php",
+        "library"
+    ],
+    "authors": [
+        {
+            "name": "hulang",
+            "email": "hulangfy@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "php\\dbskeleton\\": "src/"
+        }
+    }
+}
