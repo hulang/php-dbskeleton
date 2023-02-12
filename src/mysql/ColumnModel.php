@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace php\dbskeleton\mysql;
 
 /**
- * 字段生成
+ * 字段生成模型
  */
 class ColumnModel
 {
@@ -58,6 +58,9 @@ class ColumnModel
     public $defaultval = '';
 
     /**
+     * 设置字段名称
+     * @access public
+     * @param string $name 字段名称
      * @return mixed
      */
     public function setName($name)
@@ -66,6 +69,9 @@ class ColumnModel
         return $this;
     }
     /**
+     * 设置字段类型
+     * @access public
+     * @param string $type 字段类型
      * @return mixed
      */
     public function setType($type)
@@ -74,6 +80,9 @@ class ColumnModel
         return $this;
     }
     /**
+     * 设置是否主键
+     * @access public
+     * @param bool $ispk 是否主键
      * @return mixed
      */
     public function setIsPk($ispk)
@@ -82,6 +91,9 @@ class ColumnModel
         return $this;
     }
     /**
+     * 设置字段长度
+     * @access public
+     * @param int $len 字段长度
      * @return mixed
      */
     public function setLen($len)
@@ -89,9 +101,10 @@ class ColumnModel
         $this->len = $len;
         return $this;
     }
-
     /**
-     * 设置描述
+     * 设置字段描述
+     * @access public
+     * @param string $comment 字段描述
      * @return mixed
      */
     public function setComment($comment)
@@ -100,6 +113,9 @@ class ColumnModel
         return $this;
     }
     /**
+     * 设置字段是否自增长
+     * @access public
+     * @param bool $increment 字段是否自增长
      * @return mixed
      */
     public function setIncrement($increment)
@@ -108,6 +124,9 @@ class ColumnModel
         return $this;
     }
     /**
+     * 设置字段是否可以为空
+     * @access public
+     * @param bool $isnull 字段是否可以为空
      * @return mixed
      */
     public function setIsnull($isnull)
@@ -116,6 +135,9 @@ class ColumnModel
         return $this;
     }
     /**
+     * 设置字段默认值
+     * @access public
+     * @param string $value 字段默认值
      * @return mixed
      */
     public function setDefaultval($value)
